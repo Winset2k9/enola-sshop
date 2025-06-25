@@ -381,3 +381,11 @@
         color: var(--secondary-black);
         letter-spacing: 5px;
     }
+
+.body .features .content-box p {
+    font-size: 1000;
+    color: rgb(0, 77, 56);
+    font:bold;
+
+}  
+
