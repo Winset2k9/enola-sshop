@@ -1,0 +1,383 @@
+
+@import url(https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    border: 0;
+    text-decoration: none;
+}
+
+:root {
+    --main-color: rgba(230, 19, 0, 0.727);
+    --main-color-dark: rgb(111,111,111);
+    --secondary-black: rgb(0, 255, 98);
+}
+
+.header{
+    background: D3664F;
+    background: linear-gradient(90deg, rgb(121,155,143) 0%, rgb(223, 249, 88)100%);
+
+    padding: 1.5rem 5%;
+    width: -webkit-fill-available;
+    top: 0;
+    left: 0;
+
+    position: fixed;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.header .logo .icon {
+    color: var(--main-color);
+    font-size: 1.5rem;
+    background-color: aquamarine;
+    width: 1,5rem;
+    height: 1.5rem;
+    padding: .7rem;
+    border-radius: 50px;
+    align-items: center;
+    text-align: center;
+    transition: 2.9s;
+}
+
+.header .logo .icon:hover{
+    padding: 8rem;
+    background-color: var(--main-color-dark);
+}
+
+.header .logo .brand {
+    font-family: "Open Sans" 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    font-size: 1.2rem;
+    color: darkseagreen;
+    letter-spacing: 2px;
+    line-height: 20px;
+}
+
+.header .navigation {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    text-align: center;
+}
+.header .navigation .links a{
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    border-bottom: rosybrown solid 1px;
+    padding: .3rem;
+    margin-left: 1rem;
+    transition: .15s;
+}
+
+.header .navigation .links .active {
+    background: cadetblue;
+    color: var(--main-color);
+    border-radius: 50px;
+    padding: .3rem 1.5rem;
+    transition: .3s;
+}
+.header .navigation .links a:hover {
+    border-bottom: rgba(230, 19, 0, 0.727) solid 1px;
+
+}
+
+.header .navigation .links .active:hover{
+    background-color: cyan;
+    color: cornflowerblue;
+    border-bottom: rgb(223, 249, 88) solid 1px;
+}
+
+.header .navigation .search {
+    font-family: "Poppins", sans-serif;
+    background: bisque;
+    color: var(--secondary-black);
+    border-radius: 50px;
+    padding: .3rem 1.5rem;
+    transition: .3s;
+}
+
+.header .navigation .search:hover {
+    background-color: var(--main-color-dark);
+    color: crimson;
+
+}
+
+.body {
+    margin-top: 6rem;
+}
+
+.body .landing {
+    display: flex;
+}
+
+.body .landing .content-box {
+    padding: 10rem 5%;
+}
+.body .landing .content-box .heading span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 2.5px;
+    line-height: 4rem;
+}
+.body .landing .content-box .heading .one {
+    font-size: 2rem;
+
+}
+.body .landing .content-box .heading .two {
+    font-size: 5rem;
+    color: var(--main-color);
+}
+.body .landing .content-box .heading .three{
+    font-size: 2.7rem;
+}
+
+.body .landing .content-box .paragraph {
+    margin: 2rem 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: larger;
+    font-style: var(--secondary-black);
+}
+.body .landing .image {
+    width: 1000px;
+    height: 700px;
+  
+}
+.body .landing .content-box .button {
+    padding: 3rem 1.5rem;
+    border-radius: 50px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.4rem;
+    background-color: var(--main-color);
+    color: aliceblue;
+    border: rgb(0, 255, 98) solid 2px;
+    transition: .3s;
+}
+.body .landing .content-box .button:hover {
+    background-color: aliceblue;
+    color: var(--main-color);
+    border: var(--secondary-black) solid 2px;
+}
+
+.body .features {
+    display: flex;
+}
+
+.body .features .content-box {
+    padding: 2rem 6% 10rem 6%;
+}
+.body .features .content-box .heading span {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+.body .features .content-box .heading .one {
+    font-size: 2rem;
+}
+
+.body .features .content-box .heading .two {
+    font-size: 5rem;
+    color: var(--secondary-black);
+    
+}
+
+.body .features .content-box .heading .three {
+    font-size: 2.7rem;
+}
+
+.body .features .content-box .paragraph {
+    margin: 2rem 0;
+    font-family: "Open Sans", sans-serif;
+}
+.body .features .perksBox {
+    margin: 2rem 6% 2rem 10%;
+    display: flex;
+}
+
+.body .features .perksBox .items {
+    display: flex;
+    gap: 3rem;
+    align-content: center;
+}
+
+.body .features .perksBox .items .one .icon {
+    color: var(--secondary-black);
+    transition: .3s;
+    text-align: center;
+    font-size: 5rem;
+}
+.body .features .perksBox .items .one .title {
+    color: var(--main-color);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 2.7rem;
+}
+.body .features .perksBox .items .one .paragraph{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: justify;
+    margin-top: 1rem;
+}
+
+.body .features .perksBox .items .two .icon {
+    color: var(--secondary-black);
+    transition: .3s;
+    text-align: center;
+    font-size: 5rem;
+}
+.body .features .perksBox .items .two .title {
+    color: var(--main-color);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 2.7rem;
+}
+.body .features .perksBox .items .two .paragraph{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: justify;
+    margin-top: 1rem;
+}
+
+
+.body .features .perksBox .items .three .icon {
+    color: var(--secondary-black);
+    transition: .3s;
+    text-align: center;
+    font-size: 5rem;
+}
+.body .features .perksBox .items .three .title {
+    color: var(--main-color);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 2.7rem;
+}
+.body .features .perksBox .items .three .paragraph{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: justify;
+    margin-top: 1rem;
+}
+
+.body .features .perksBox .items .one .icon:hover,
+.body .features .perksBox .items .two .icon:hover,
+.body .features .perksBox .items .three .icon:hover {
+    color: var(--main-color);
+}
+
+.body .services {
+    background: #e50000;
+    background: linear-gradient(90deg, rgba(88,88,99) 0%, rgb(44,99,44)100%);
+    padding: 2rem 6% 2rem 6%;
+}
+
+.body .services .heading {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.body .services .columnBox {
+    display: flex;
+    gap: 2rem;
+}
+
+.body .services .column {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.body .services .heading .title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3rem;
+    width: 40rem;
+    margin-top: 1rem;
+    letter-spacing: 5px;
+    line-height: 3rem;
+}
+
+.body .services .heading .paragraph {
+    font-family: "Open Sans", sans-serif;
+    color: antiquewhite;
+    text-align: justify;
+}
+
+.body .services .columnBox .column .icon {
+    font-size: 2.5rem;
+    color: white;
+    background-color: var(--main-color-dark);
+    padding: 1.6rem 2.1rem;
+    border-radius: 50px;
+    margin-right: 2rem;
+}
+.body .services .columnBox .column .title {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2rem;
+    color: var(--main-color-dark);
+}
+
+.body .services .columnBox .column .description {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: antiquewhite;
+}
+
+.body .testimonial {
+    padding: 5rem 6%;
+    align-items: center;
+    text-align: center;
+}
+.body .testimonial .content-box {
+    align-items: center;
+    text-align: center;
+}
+
+
+.body .testimonial .quoteline {
+    align-items: center;
+    text-align: center;
+    align-items: center;
+    text-align: center;
+}
+.body .testimonial .quoteline .fa-quote-left {
+    font-size: 5rem;
+}
+
+.body .testimonial .quoteline .fa-star {
+    font-size: 2rem;
+}
+
+.body .testimonial .title {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 3.5rem; 
+        color: var(--secondary-black);
+        letter-spacing: 5px;
+    }
